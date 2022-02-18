@@ -9,28 +9,29 @@ body {
   padding: 0;
 }
 
-.header {
-  background-color: white;
-  padding: 10px;
+.image-container {
   margin: 0;
+  padding: 0;
+  position: relative;
 }
 
-.logo {
-  width: 10%;
-  margin-left: auto;
-  margin-right: auto;
+.language {
+  text-align: center;
+}
+
+.mainImage {
+  align-content: center;
+  padding: 0;
 }
 
 .headerTitle {
   font-size: 1.7rem;
-  margin-top: 20px;
-  text-align: center;
   font-weight: bold;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
 }
 
-.questionArea {
-  padding: 20px;
-}
 .questionnaire {
   color: white;
   margin-top: 20px;
