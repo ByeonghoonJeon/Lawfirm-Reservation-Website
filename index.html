@@ -1,9 +1,9 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" />
 
 <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
+    <meta content="text/html" charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Fonts and icons -->
@@ -23,221 +23,159 @@
 
 <body>
     <div class="container-fluid">
+
+        <div class="row">
+            <img src="images/main.jpg" class="mainImage">
+        </div>
         <div class="language">
+            <a href="#"><button type="button"
+                    class="btn btn-lg btn-success my-5  mr-2"><strong>한국어</strong></button></a>
             <a href="english.html"><button type="button"
                     class="btn btn-lg btn-outline-light my-5  mr-2">English</button></a>
             <a href="chinese.html">
                 <button" class="btn btn-lg btn-outline-danger my-5">中文</button>
             </a>
         </div>
-        <div class="container image-container">
-            <img src="images/main.jpg" class="mainImage">
-            <h5 class="headerTitle">무료 상담 신청</h5>
+        <h5 class="headerTitle">무료 상담 신청</h5>
+        <div class="row cardSection">
+            <div class="card mb-5">
+                <div class="card-body">
+                    <h5 class="notice">온라인 사전설문 작성, 예약 후 방문 상담시 첫 회 상담료는 무료입니다.<br>
+                        외국인의 경우 통역비는 별도입니다. 다만 모국어를 사용하는 통역인을 개별적으로 대동하거나, 한국어, 중국어, 영어로 온라인 사전 설문 작성, 예약 후 방문 상담을 받는 경우
+                        첫
+                        회에 한해
+                        무료 법률상담(통역 포함) 서비스를 이용하실 수 있습니다.
+                    </h5><br>
+                </div>
+            </div>
         </div>
-        <div class="questionArea">
-            <h5 class="questionnaire">귀 기관에서는 원내에서 사용되는 진단, 증상, 처치수술, 약물, 검사, 간호 등 의료데이터 용어[로컬용어, 인터페이스용어]에
-                병원내부코드[로컬코드]를
-                생성하고 있습니까? <br> 그리고 기관의 로컬용어에
-                대해
-                통계, 진료비 청구를 위한 표준분류체계 코드[KCD, EDI, JD] 또는 국제표준용어체계[SNOMED CT, LOINC 등]와 매핑하여 관리하고 있습니까?
-            </h5><br>
-            <h5 class="questionnaireTip">중복 선택 허용</h5>
-        </div>
-        <div class="answerArea">
-            <div class="row col text-center mx-0">
-                <h4 class="fw-bold mt-3">1. 진단용어</h4>
-                <hr class="separationLine1">
-                <form class="px-4" action="">
-                    <p class="fw-bold">병원 내부 코드 생성 여부</p>
-                    <div class="form-check mb-2 inbox mr-5">
-                        <input class="form-check-input" type="radio" name="exampleForm" id="radioExample1" />
-                        <label class="form-check-label" for="radioExample1">
-                            여
-                        </label>
+        <hr class="separationLine3">
+        <form action="mailto:jeon4972@snu.ac.kr" method="post" enctype="text/plain" accept-charset="utf-8">
+            <div class="row agreement">
+                <h5 class="personalInformationAgreement">[필수] 개인정보수집, 처리 이용 동의</h5>
+                <div class="form-check mb-5 inbox">
+                    <button type="button" class="btn btn-sm btn-warning mt-3" id="myBtn"><strong>내용
+                            확인하기</strong></button>
+                    <!-- The Modal -->
+                    <div id="myModal" class="modal">
+                        <!-- Modal content -->
+                        <div class="modal-content">
+                            <div class="modalTextField row">
+                                <p>개인정보 수집 처리 이용에 관한 안내</p>
+                            </div>
+                            <div class="modalAgreeField row justify-content-center">
+                                <div class="form-check mb-2 inbox">
+                                    <input class="form-check-input mb-3 form-group" type="radio" name="iAgree"
+                                        id="iAgree" />
+                                    <label class="form-check-label" for="iAgree">
+                                        <p class="yesAgree">위 내용에 동의합니다.</p>
+                                    </label>
+                                </div>
+                            </div>
+                            <span class="close">&times;</span>
+                        </div>
                     </div>
-                    <div class="form-check mb-2 inbox">
-                        <input class="form-check-input" type="radio" name="exampleForm" id="radioExample2" />
-                        <label class="form-check-label" for="radioExample2">
-                            부
-                        </label>
-                    </div>
-                </form>
-                <hr class="separationLine2">
-                <form class="px-4" action="">
-                    <p class="fw-bold">국내 표준 코드 매핑 여부</p>
-                    <div class="form-check mb-2 inbox mr-5">
-                        <input class="form-check-input" type="checkbox" name="exampleForm" id="checkbox1" />
-                        <label class="form-check-label" for="checkbox1">
-                            KCD
-                        </label>
-                    </div>
-                    <div class="form-check mb-2 inbox mr-5">
-                        <input class="form-check-input" type="checkbox" name="exampleForm" id="checkbox2" />
-                        <label class="form-check-label" for="checkbox2">
-                            기타
-                        </label>
-                    </div>
-                    <div class="form-check mb-2 inbox">
-                        <input class="form-check-input" type="checkbox" name="exampleForm" id="checkbox3" />
-                        <label class="form-check-label" for="checkbox3">
-                            부
-                        </label>
-                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <br>
+                <label for="title" class="labelText col-md-1 form-group text-md-center text-center mb-3">
+                    제목
+                </label>
+                <input type="text" lang="ko" id="title" name="title" placeholder="문의 하고 싶은 내용의 제목"
+                    class="form-control col-md-3 col-6 mb-3" value=""><br>
+            </div>
+            <div class="row justify-content-center">
+                <label for="name" class="labelText col-md-1 form-group text-md-center text-center mb-3">
+                    이름
+                </label>
+                <input type="text" id="name" name="name" placeholder="이름" class="form-control col-md-3 col-6 mb-3"
+                    value="이름">
+            </div>
+            <div class="row justify-content-center">
+                <label for="email" class="labelText col-md-1 form-group text-md-center text-center mb-3">
+                    내 이메일 주소
+                </label>
+                <input type="email" id="email" name="email" placeholder="e-mail"
+                    class="form-control col-md-3 col-6 mb-3" value="e-mail">
+            </div>
+            <div class="row justify-content-center">
+                <label for="contact" class="labelText col-md-1 form-group text-md-center text-center mb-3">
+                    연락 가능한 번호
+                </label>
+                <input type="tel" id="contact" name="contact" placeholder="123 456 789"
+                    class="form-control col-md-3 col-6 mb-3" value="123 456 789">
+            </div>
+            <div class="row justify-content-center">
+                <label for="start" class="labelText col-md-1 form-group text-md-center text-center mb-3">방문을 원하는
+                    날짜</label>
 
-                    <!-- Message input -->
-                    <div class="form-outline mb-4 textBox">
-                        <label class="form-label" for="form4Example3">기타 체크시 입력</label>
-                        <textarea class="form-control text-center" id="form4Example3" placeholder="사용중인 국내 표준 코드 입력"
-                            rows="1"></textarea>
-                    </div>
-                </form>
-                <hr class="separationLine2">
-                <form class="px-4" action="">
-                    <p class="fw-bold">국제 표준 코드 매핑 여부</p>
-                    <div class="form-check mb-2 inbox mr-5">
-                        <input class="form-check-input" type="checkbox" name="exampleForm" id="checkbox4" />
-                        <label class="form-check-label" for="checkbox4">
-                            SNOMED CD
-                        </label>
-                    </div>
-                    <div class="form-check mb-2 inbox mr-5">
-                        <input class="form-check-input" type="checkbox" name="exampleForm" id="checkbox5" />
-                        <label class="form-check-label" for="checkbox5">
-                            기타
-                        </label>
-                    </div>
-                    <div class="form-check mb-2 inbox">
-                        <input class="form-check-input" type="checkbox" name="exampleForm" id="checkbox6" />
-                        <label class="form-check-label" for="checkbox6">
-                            부
-                        </label>
-                    </div>
-
-                    <!-- Message input -->
-                    <div class="form-outline mb-4 textBox">
-                        <label class="form-label" for="form4Example3">기타 체크시 입력</label>
-                        <textarea class="form-control text-center" id="form4Example3" rows="1"
-                            placeholder="사용중인 국제 표준 코드 입력"></textarea>
-                    </div>
-                </form>
-                <hr class="separationLine2">
-                <form class="px-4" action="">
-                    <div class="form-check mb-2 inbox">
-                        <input class="form-check-input" type="checkbox" name="exampleForm" id="checkbox7" />
-                        <label class="form-check-label" for="checkbox7">
-                            잘 모르겠음
-                        </label>
-                    </div>
-                </form>
+                <input type="date" id="start" name="trip-start" min="2022-01-01" max="2100-12-31"
+                    class="form-control col-md-3 col-6 mb-3" lang="ko">
             </div>
             <hr class="separationLine3">
-            <div class="row col text-center mx-0">
-                <h4 class="fw-bold mt-3">2. 증상용어</h4>
-                <hr class="separationLine1">
-                <form class="px-4" action="">
-                    <p class="fw-bold">병원 내부 코드 생성 여부</p>
-                    <div class="form-check mb-2 inbox mr-5">
-                        <input class="form-check-input" type="radio" name="exampleForm" id="radioExample1" />
-                        <label class="form-check-label" for="radioExample1">
-                            여
-                        </label>
-                    </div>
-                    <div class="form-check mb-2 inbox">
-                        <input class="form-check-input" type="radio" name="exampleForm" id="radioExample2" />
-                        <label class="form-check-label" for="radioExample2">
-                            부
-                        </label>
-                    </div>
-                </form>
-                <hr class="separationLine2">
-                <form class="px-4" action="">
-                    <p class="fw-bold">국내 표준 코드 매핑 여부</p>
-                    <div class="form-check mb-2 inbox mr-5">
-                        <input class="form-check-input" type="checkbox" name="exampleForm" id="checkbox1" />
-                        <label class="form-check-label" for="checkbox1">
-                            KCD
-                        </label>
-                    </div>
-                    <div class="form-check mb-2 inbox mr-5">
-                        <input class="form-check-input" type="checkbox" name="exampleForm" id="checkbox2" />
-                        <label class="form-check-label" for="checkbox2">
-                            기타
-                        </label>
-                    </div>
-                    <div class="form-check mb-2 inbox">
-                        <input class="form-check-input" type="checkbox" name="exampleForm" id="checkbox3" />
-                        <label class="form-check-label" for="checkbox3">
-                            부
-                        </label>
-                    </div>
-
-                    <!-- Message input -->
-                    <div class="form-outline mb-4 textBox">
-                        <label class="form-label" for="form4Example3">기타 체크시 입력</label>
-                        <textarea class="form-control text-center" id="form4Example3" placeholder="사용중인 국내 표준 코드 입력"
-                            rows="1"></textarea>
-                    </div>
-                </form>
-                <hr class="separationLine2">
-                <form class="px-4" action="">
-                    <p class="fw-bold">국제 표준 코드 매핑 여부</p>
-                    <div class="form-check mb-2 inbox mr-5">
-                        <input class="form-check-input" type="checkbox" name="exampleForm" id="checkbox4" />
-                        <label class="form-check-label" for="checkbox4">
-                            SNOMED CD
-                        </label>
-                    </div>
-                    <div class="form-check mb-2 inbox mr-5">
-                        <input class="form-check-input" type="checkbox" name="exampleForm" id="checkbox4" />
-                        <label class="form-check-label" for="checkbox4">
-                            WHO-ART
-                        </label>
-                    </div>
-                    <div class="form-check mb-2 inbox mr-5">
-                        <input class="form-check-input" type="checkbox" name="exampleForm" id="checkbox4" />
-                        <label class="form-check-label" for="checkbox4">
-                            MedDRA
-                        </label>
-                    </div>
-                    <div class="form-check mb-2 inbox mr-5">
-                        <input class="form-check-input" type="checkbox" name="exampleForm" id="checkbox5" />
-                        <label class="form-check-label" for="checkbox5">
-                            기타
-                        </label>
-                    </div>
-                    <div class="form-check mb-2 inbox">
-                        <input class="form-check-input" type="checkbox" name="exampleForm" id="checkbox6" />
-                        <label class="form-check-label" for="checkbox6">
-                            부
-                        </label>
-                    </div>
-
-                    <!-- Message input -->
-                    <div class="form-outline mb-4 textBox">
-                        <label class="form-label" for="form4Example3">기타 체크시 입력</label>
-                        <textarea class="form-control text-center" id="form4Example3" rows="1"
-                            placeholder="사용중인 국제 표준 코드 입력"></textarea>
-                    </div>
-                </form>
-                <hr class="separationLine2">
-                <form class="px-4" action="">
-                    <div class="form-check mb-2 inbox">
-                        <input class="form-check-input" type="checkbox" name="exampleForm" id="checkbox7" />
-                        <label class="form-check-label" for="checkbox7">
-                            잘 모르겠음
-                        </label>
-                    </div>
-                </form>
+            <h5 class="questionnaireTip mb-5">문의할 내용</h5>
+            <div class="row justify-content-center">
+                <label for="category" class="labelText col-md-1 form-group text-md-center text-center">
+                    분야 선택
+                </label>
+                <select id="category" name="category" class="form-control col-md-3 col-6 text-left mb-3">
+                    <option selected>분야를 선택해 주세요 ↓</option>
+                    <option value="민사">민사-대여금/보증금반환/계약해제/손해배상/부동산인도/등기</option>
+                    <option value="형사">형사-고소/수사참여/형사재판</option>
+                    <option value="가사">가사-이혼/상속/성견후견</option>
+                    <option value="기타">기타</option>
+                </select>
             </div>
-        </div>
+            <hr class="separationLine3">
+            <h5 class="questionnaireTip mb-5">문의 내용 상세</h5>
+            <p class="labelText text-center">가. 사건의 경위 및 현재 귀하가 처한 상황(시간순으로 서술)</p>
+            <div class=" row justify-content-center">
+                <textarea class="form-control col-md-5 col-6 mb-3" name="feedback" id="content"
+                    rows="8">2018. 3. 경 사업 자금으로 필요하다고 하여 1년 후에 받기로 하고 이자약정 없이 지인에게 차용증 없이 50,000,000원을 빌려주었는데, 현재까지 빌려준 돈을 받지 못하였습니다. 그 사람은 제가 돈을 갚으라고 할 때마다 나중에 갚겠다며 차일 피일 미루다가 2020. 경부터는 연락을 회피하기 시작하였습니다. 그러다가 작년 10월 경 갑자기 다시 연락이 되었는데 빌려간 투자금이고 지금은 사정이 좋지 않으니 돌려줄 수 없고 일부라도 차용증을 써주겠다고 하였습니다.</textarea>
+            </div>
+            <hr class="separationLine3">
+            <div class="row justify-content-center">
+                <div class="col col-md-3 form-group text-md-center text-center mt-3 pr-0 pl-0">
+                    <button type="submit" class="btn btn-outline-success btn-lg" style="font-weight: bold;">문의
+                        접수하기</button>
+                </div>
+            </div>
+        </form>
+        <hr class="separationLine3">
+
     </div>
-    <hr class="separationLine3">
 
     <footer id="footer" class="text-center pt-2 pb-1">
         <p>© Copyright 2022 J Food Tech</p>
     </footer>
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
 
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
 
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks the button, open the modal 
+        btn.onclick = function () {
+            modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
